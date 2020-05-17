@@ -10,10 +10,14 @@ export default function Modal(props) {
 
    return (
       <>
-         <Backdrop show={props.show} toggleBackdrop={props.modalClosed} />
+         <Backdrop
+            show={props.show}
+            toggleBackdrop={props.modalClosed}
+         />
          <div
             style={backgroundStyle}
-            className={(props.show ? "modal show" : "modal hide")}>
+            className={(props.show ? "modal show" : "modal hide")}
+         >
             {props.children}
          </div>
       </>
